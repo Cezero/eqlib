@@ -197,6 +197,7 @@
 #define CharacterZoneClient__BardCastBard_x                        0x1400D0EA0
 #define CharacterZoneClient__CalcAffectChange_x                    0x1400D1CE0
 #define CharacterZoneClient__CalcAffectChangeGeneric_x             0x1400D1F30
+#define CharacterZoneClient__CanMedOnHorse_x                       0x1400E5DE0
 #define CharacterZoneClient__CanUseItem_x                          0x1400E6210
 #define CharacterZoneClient__CanUseMemorizedSpellSlot_x            0x1400D2900
 #define CharacterZoneClient__CastSpell_x                           0x1400D29A0
@@ -218,7 +219,6 @@
 #define CharacterZoneClient__GetItemCountWorn_x                    0x1400EFE00
 #define CharacterZoneClient__GetLastEffectSlot_x                   0x1400D6E30
 #define CharacterZoneClient__GetManaRegen_x                        0x1400F0BE0
-#define CharacterZoneClient__GetMaxEffects_x                       0x1400D7030
 #define CharacterZoneClient__GetModCap_x                           0x1400F81A0
 #define CharacterZoneClient__GetOpenEffectSlot_x                   0x1400D70C0
 #define CharacterZoneClient__GetPCSpellAffect_x                    0x1400D72D0
@@ -315,6 +315,7 @@
 #define CDisplay__GetUserDefinedColor_x                            0x14018A610
 #define CDisplay__InitCharSelectUI_x                               0x14018A8C0
 #define CDisplay__ReloadUI_x                                       0x140195960
+#define CDisplay__RestartUI_x                                      0x1401F3AF0
 #define CDisplay__WriteTextHD2_x                                   0x14019C970
 #define CDisplay__TrueDistance_x                                   0x14019C620
 #define CDisplay__SetViewActor_x                                   0x140198E60
@@ -919,6 +920,9 @@
 // FreeToPlayClient
 #define FreeToPlayClient__Instance_x                               0x140648290
 #define FreeToPlayClient__RestrictionInfo_x                        0x140AAD9E0
+
+// UdpConnection
+#define UdpConnection__GetStats_x                                  0x1405286C0
 
 #if __has_include("../private/eqgame-private.h")
 #include "../private/eqgame-private.h"
